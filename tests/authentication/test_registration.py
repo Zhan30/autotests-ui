@@ -23,6 +23,7 @@ from tools.routes import AppRoute
 @allure.suite(AllureFeature.AUTHENTICATION)
 @allure.sub_suite(AllureStory.REGISTRATION)
 class TestRegistration:
+    @pytest.mark.xdist_group(name="authorization-group")
     @allure.title("Registration with correct email, username and password")
     @allure.severity(Severity.CRITICAL)  # Добавили severity
     def test_successful_registration(self, registration_page: RegistrationPage, dashboard_page: DashboardPage):  # Теперь используем фикстуру
