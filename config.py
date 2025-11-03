@@ -4,8 +4,6 @@ from typing import Self
 from pydantic import EmailStr, FilePath, HttpUrl, DirectoryPath, Field, BaseModel
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from tests.pytest.test_fixtures import settings
-
 
 class Browser(str, Enum):
     WEBKIT = "webkit"
