@@ -21,5 +21,4 @@ def get_logger(name: str) -> logging.Logger:
     # Добавляем обработчик к логгеру
     logger.addHandler(handler)
 
-    # Возвращаем настроенный логгер
     return logger
